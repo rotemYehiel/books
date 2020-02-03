@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>book-shop</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>Book Shoop
+            
+        </h1>
+        <img class="logo" src="./img/logo.png">
+    </header>
+    <h4 class="new-book" onclick="onAddBook()">Create a new book</h4>
+    <section class="details-win" hidden>
+        <button onclick="onCloseDetailsWin()">x</button>
+        <h2>Book Details</h2>
+        <h3></h3>
+        <h4></h4>
+        <p></p>
+        <section class="book-rate">
+            Book Rate
+            <button onclick="onUpClicked(this)" class="btn-up">+</button>
+            <section class="rate"></section>
+            <button onclick="onDownClicked(this)" class="btn-down">-</button>
+        </section>
+      </section>  
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+        <tbody class="books-table">
+
+        </tbody>
+    </table>
+    <footer>
+        <img class="footer" src="./img/footer.png">
+    </footer>
+    <script src="js/storage.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>
